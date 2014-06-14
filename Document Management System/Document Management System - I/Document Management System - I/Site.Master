@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Document_Management_System___I.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+     <link href="./Styles/Index.css" rel="Stylesheet" type="text/css" />
+     <link href="Styles/bootstrap-theme.css" rel="Stylesheet" type="text/css" />
+     <link href="Styles/bootstrap-theme.min.css" rel="Stylesheet" type="text/css" />
+     <link href="Styles/bootstrap.css" rel="Stylesheet" type="text/css" />
+     <link href="Styles/bootstrap.min.css" rel="Stylesheet" type="text/css" />
+     <link href="Styles/bootstrap-select.css" rel="Stylesheet" type="text/css" />
+     <link href="Styles/bootstrap-select.min.css" rel="Stylesheet" type="text/css" />
+     <link href="Styles/Index.css" rel="Stylesheet" type="text/css" />
+
+     <script type="text/javascript" src="Scripts/jquery-1.6.min.js"></script>
+     <script type="text/javascript" src="Scripts/bootstrap.js"></script>
+     <script type="text/javascript" src="Styles/bootstrap-theme.min.css"></script>
+     <script type="text/javascript" src="Scripts/jquery-2.0.3.js"></script>
+     <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+     <script type="text/javascript" src="Scripts/JScript.js"></script>
+     <script type="text/javascript" src="Scripts/bootstrap-select.js"></script>
+     <script type="text/javascript" src="Scripts/bootstrap-select.min.js"></script>
+     
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+ <form id="Form1" runat="server">
+    <div class="page">
+            <div class="title">
+            <br />
+            </div>
+          <div class="clear">
+                <asp:Menu ID="NavigationMenu" runat="server" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" CssClass="navbar-inverse navbar-fixed-top" StaticMenuStyle-CssClass= "nav" StaticSelectedStyle-CssClass="active" DynamicMenuStyle-CssClass="dropdown-menu">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/edu/IIITB/View/Document.aspx" Text="Document"> 
+                            <asp:MenuItem NavigateUrl="~/edu/IIITB/View/Document.aspx" Text="Add Document"/>
+                            <asp:MenuItem NavigateUrl="~/edu/IIITB/View/View_rejected.aspx" Text="View Rejected Document List"/>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/edu/IIITB/View/Document_fragment.aspx" Text="Document Fragment"/>
+                        <asp:MenuItem NavigateUrl="~/edu/IIITB/View/Add_user.aspx" Text="User"/>
+                        <asp:MenuItem NavigateUrl="~/edu/IIITB/View/Add_group.aspx" Text="Group"> 
+                            <asp:MenuItem NavigateUrl="~/edu/IIITB/View/Add_group.aspx" Text="Add Groups"/>
+                            <asp:MenuItem NavigateUrl="~/edu/IIITB/View/View_Groups.aspx" Text="View Groups"/>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="~/edu/IIITB/View/Login.aspx" Text="LogOut"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+            <div class="clear">
+                <asp:Menu ID="Menu1" runat="server" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" CssClass="navbar-inverse navbar-fixed-top" StaticMenuStyle-CssClass= "nav" StaticSelectedStyle-CssClass="active" DynamicMenuStyle-CssClass="dropdown-menu">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/><asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="" Text="    "/>
+                        <asp:MenuItem NavigateUrl="~/edu/IIITB/View/Login.aspx" Text="LogOut"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+ </form>
+</body>
+</html>
